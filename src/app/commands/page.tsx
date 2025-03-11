@@ -6,34 +6,82 @@ export const dynamic = "force-dynamic";
 export default function Commands() {
   const commands = [
     { 
-      command: "!help", 
-      aliases: ["!commands", "!cmds"],
-      user: "Everyone", 
-      description: "Shows available commands" 
-    },
-    { 
-      command: "!uptime", 
-      aliases: ["!live"],
-      user: "Everyone", 
-      description: "Shows how long the stream has been live" 
-    },
-    { 
-      command: "!followage", 
-      aliases: ["!following"],
-      user: "Everyone", 
-      description: "Shows how long you've been following" 
-    },
-    { 
       command: "!ban", 
-      aliases: [],
-      user: "Moderators", 
-      description: "Bans a user from chat" 
+      aliases: ["!permaban"],
+      user: "Wachhunde/Mods", 
+      description: "Bannt einen Nutzer permanent aus dem Kanal (z.B. !ban @nutzer Grund)" 
     },
-    { 
-      command: "!clear", 
-      aliases: ["!clr"],
-      user: "Moderators", 
-      description: "Clears the chat history" 
+    {
+      command: "!category",
+      aliases: [],
+      user: "Wachhunde/Mods",
+      description: "Ändert die Kategorie des Streams oder zeigt die aktuelle an"
+    },
+    {
+      command: "!commands",
+      aliases: ["cmd", "cmds","help","befehle", "hilfe"],
+      user: "Jeder",
+      description: "Zeigt den Link zu den Befehlen"
+    },
+    {
+      command: "!discord",
+      aliases: ["dc", "community"],
+      user: "Jeder",
+      description: "Zeigt den Link zum Discord-Server"
+    },
+    {
+      command: "!followage",
+      aliases: [],
+      user: "Jeder",
+      description: "Zeigt an, wie lange du einem Kanal bereits folgst"
+    },
+    {
+      command: "!lurk",
+      aliases: [],
+      user: "Jeder",
+      description: "Zeigt an, dass du gerade lurkst"
+    },
+    {
+      command: "!mod",
+      aliases: [],
+      user: "Wachhunde/Mods",
+      description: "Moderations-Tool: !mod [timeout|ban|unban] @nutzer [dauer] [grund]"
+    },
+    {
+      command: "!ping",
+      aliases: [],
+      user: "Jeder",
+      description: "Zeigt den aktuellen Ping des Bots"
+    },
+    {
+      command: "!timeout",
+      aliases: ["!to"],
+      user: "Wachhunde/Mods",
+      description: "Timeout einen Nutzer für eine bestimmte Zeit (z.B. !timeout @nutzer 10m Spam)"
+    },
+    {
+      command: "!title",
+      aliases: [],
+      user: "Wachhunde/Mods",
+      description: "Ändert den Titel des Streams"
+    },
+    {
+      command: "!unban",
+      aliases: ["pardon"],
+      user: "Wachhunde/Mods",
+      description: "Entbannt einen Nutzer aus dem Kanal (z.B. !unban @nutzer)"
+    },
+    {
+      command: "!unlurk",
+      aliases: [],
+      user: "Jeder",
+      description: "Beendet deinen Lurk-Modus"
+    },
+    {
+      command: "!youtube",
+      aliases: ["yt", "videos"],
+      user: "Jeder",
+      description: "Zeigt den Link zu dem YouTube Kanal"
     },
   ];
 
