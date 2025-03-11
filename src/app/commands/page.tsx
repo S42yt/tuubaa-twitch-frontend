@@ -72,16 +72,16 @@ export default function Commands() {
       description: "Entbannt einen Nutzer aus dem Kanal (z.B. !unban @nutzer)"
     },
     {
-      command: "!unlurk",
-      aliases: [],
-      user: "Jeder",
-      description: "Beendet deinen Lurk-Modus"
-    },
-    {
       command: "!youtube",
       aliases: ["yt", "videos"],
       user: "Jeder",
       description: "Zeigt den Link zu dem YouTube Kanal"
+    },
+    {
+      command: "!unlurk",
+      aliases: [],
+      user: "Jeder",
+      description: "Beendet deinen Lurk-Modus"
     },
   ];
 
